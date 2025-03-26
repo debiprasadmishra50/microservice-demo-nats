@@ -6,7 +6,7 @@
 ## How to run the app
 
 1. Start the Docker Engine
-2. Run `kubectl apply -f nats-depl.yml`
+2. Run `kubectl apply -f nats-depl.yaml`
 3. Once it's up in kubernates verify it using `kubctl get pods`
 4. To run it in localhost, port forward from your local machine to the pod running on Kubernetes
    1. `kubctl port-forward [pod_name] 4222:4222` // for nats
