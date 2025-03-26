@@ -9,8 +9,8 @@
 2. Run `kubectl apply -f nats-depl.yaml`
 3. Once it's up in kubernates verify it using `kubctl get pods`
 4. To run it in localhost, port forward from your local machine to the pod running on Kubernetes
-   1. `kubctl port-forward [pod_name] 4222:4222` // for nats
-   1. `kubctl port-forward [pod_name] 8222:8222` // for monitoring
+   1. `kubectl port-forward [pod_name] 4222:4222` // for nats
+   1. `kubectl port-forward [pod_name] 8222:8222` // for monitoring
 5. Open 3 terminals
    4.1 move to nats-test directory
    - `cd ./nats-test`
