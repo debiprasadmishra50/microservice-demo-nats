@@ -11,6 +11,11 @@ export class TicketCreatedListener extends Listener<TicketCreatedEvent> {
     console.log(`Event Data: Seq: ${msg.getSequence()}, Data:`, data);
     console.log("-".repeat(30));
 
+    if (data.price !== 20) msg.ack();
+    // else return;
+
+    // version mismatch
+
     msg.ack();
   }
 }
